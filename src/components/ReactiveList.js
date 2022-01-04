@@ -26,9 +26,9 @@ const booksReactiveList = data => {
 				whiteSpace: "nowrap",
 				overflow: "hidden",
 				textOverflow: "ellipsis"
-			}}>
-				{data.original_title}
-			</h3>
+			}} dangerouslySetInnerHTML={{
+				__html: data.original_title
+			}}></h3>
 			        
 			<div className="flex column justify-space-between">
 				          
