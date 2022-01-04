@@ -125,6 +125,9 @@ export default (() => {
 							sortBy="asc"
 							aggregationSize="30"
 							size="30"
+							react={{
+								"and": ["searchSensor"]
+							}}
 						/>
 						<Components.RangeInput
 							dataField="original_publication_year"
