@@ -29,7 +29,11 @@ export default {
 	"mode": "production",
 	"projectType": "gatsby",
 	"site": {
-		"styles": {},
-		"seo": {}
+		"styles": {
+			"font": "16px --fontFamily-googleOpenSans"
+		},
+		"seo": {
+			"title": "Faceted Search with Homepage Navigation"
+		}
 	}
 }
