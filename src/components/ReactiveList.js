@@ -116,9 +116,9 @@ const ReactiveListWrapper = props => {
 			margin: "1rem auto 0",
 			width: "max-content"
 		}}>
-			Found 
+			Found  
 			{stats.numberOfResults}
-			 results in 
+			  results in  
 			{stats.time}
 			ms
 		</h4>;

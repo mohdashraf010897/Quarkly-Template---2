@@ -26,6 +26,7 @@ export default (() => {
 			width="100%"
 			box-shadow="0 0 0 0 #c6f5fe"
 			position="relative"
+			font="16px --fontFamily-googleOpenSans"
 		>
 			<Override
 				slot="SectionContent"
@@ -58,14 +59,20 @@ export default (() => {
 				top="50%"
 				left="50%"
 				transform="translate(-50%, -82%)"
-				font="3rem sans-serif"
+				font="3rem --fontFamily-googleOpenSans"
 				border-color="#000000"
 				color="#525252"
 			>
-				Faceted Search
+				Book Search App
 			</Text>
 		</Section>
-		<Box background="#c3c3c3" padding="0" width="100vw" justify-content="space-between">
+		<Box
+			background="#c3c3c3"
+			padding="0"
+			width="100vw"
+			justify-content="space-between"
+			font="16px --fontFamily-googleOpenSans"
+		>
 			<Components.ReactiveBase
 				padding="20px 20px 20px 20px"
 				url="https://a03a1cb71321:75b6603d-9456-4a5a-af6b-a487b309eb61@appbase-demo-ansible-abxiydt-arc.searchbase.io"
@@ -98,6 +105,9 @@ export default (() => {
 						"index": "good-books-ds",
 						"minChars": 4
 					}}
+					width="100%"
+					margin="0px auto 0px auto"
+					max-width="600px"
 				/>
 				<Box display="flex" justify-content="space-between" lg-flex-direction="column">
 					<Box display="flex" flex-direction="column" min-width="300px" padding="1rem 0px 1rem 0px">
