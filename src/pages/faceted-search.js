@@ -50,7 +50,13 @@ export default (() => {
 				border-color="#494949"
 				hover-border-style="none"
 			>
-				<Box width="max-content" cursor="pointer" background="#c6f5fe">
+				<Box
+					width="max-content"
+					cursor="pointer"
+					background="#c6f5fe"
+					sm-width="50px"
+					sm-overflow="hidden"
+				>
 					<Image src="https://softr-prod.imgix.net/applications/d919d2ef-4bb1-4b91-aa55-6040ea8667e1/assets/f7a75f17-313d-4759-992f-e7d351a11836.svg" display="block" />
 				</Box>
 			</Link>
@@ -62,6 +68,12 @@ export default (() => {
 				font="3rem --fontFamily-googleOpenSans"
 				border-color="#000000"
 				color="#525252"
+				lg-font-size="2rem"
+				sm-font-size="1.5rem"
+				lg-right={0}
+				lg-left="unset"
+				lg-transform="translate(-10%, -82%)"
+				sm-transform="translate(-10%, -100%)"
 			>
 				Book Search App
 			</Text>
@@ -108,6 +120,7 @@ export default (() => {
 					width="100%"
 					margin="0px auto 0px auto"
 					max-width="600px"
+					lg-max-width="100%"
 				/>
 				<Box display="flex" justify-content="space-between" lg-flex-direction="column">
 					<Box display="flex" flex-direction="column" min-width="300px" padding="1rem 0px 1rem 0px">

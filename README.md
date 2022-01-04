@@ -2,7 +2,7 @@
   <img src="http://uploads.quarkly.io/readme/gatsby/readme-quarkly-and-gatsby.png" width="480px" alt="Gatsby project from Quarkly">
 </p>
 
-<h1 align="center">Template - 2 </h1>
+<h1 align="center">Template - 2 (Faceted Search with Homepage Navigation)</h1>
 
 <h4 align="center">This Gatsby project was created in <a href="https://quarkly.io/" target="_blank">Quarkly.io</a> – design tool for creating websites and web apps</h4>
 
