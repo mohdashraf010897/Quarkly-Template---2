@@ -113,7 +113,7 @@ const ReactiveListWrapper = props => {
 		</div>;
 	}} renderResultStats={function (stats) {
 		return <h4 style={{
-			margin: "1rem auto 0",
+			margin: "1rem 1rem 0",
 			width: "max-content"
 		}}>
 			Found  

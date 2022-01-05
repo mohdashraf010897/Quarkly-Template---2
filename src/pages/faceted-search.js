@@ -78,13 +78,7 @@ export default (() => {
 				Book Search App
 			</Text>
 		</Section>
-		<Box
-			background="#c3c3c3"
-			padding="0"
-			width="100vw"
-			justify-content="space-between"
-			font="16px --fontFamily-googleOpenSans"
-		>
+		<Box padding="0" width="100vw" justify-content="space-between" font="16px --fontFamily-googleOpenSans">
 			<Components.ReactiveBase
 				padding="20px 20px 20px 20px"
 				url="https://a03a1cb71321:75b6603d-9456-4a5a-af6b-a487b309eb61@appbase-demo-ansible-abxiydt-arc.searchbase.io"
@@ -102,7 +96,7 @@ export default (() => {
 					componentId="searchSensor"
 					dataField="name, name.search"
 					fieldWeights="3,1"
-					placeholder="Try Searching for &quot;Paradise Lost&quot;, &quot;Road Trip&quot;,  etc."
+					placeholder="Hey 👋"
 					highlight
 					URLParams
 					enablePopularSuggestions
@@ -121,6 +115,7 @@ export default (() => {
 					margin="0px auto 0px auto"
 					max-width="600px"
 					lg-max-width="100%"
+					showVoiceSearch
 				/>
 				<Box display="flex" justify-content="space-between" lg-flex-direction="column">
 					<Box display="flex" flex-direction="column" min-width="300px" padding="1rem 0px 1rem 0px">
@@ -135,12 +130,13 @@ export default (() => {
 							showSearch
 							showFilter
 							margin="0px 0px 1rem 0px"
-							sortBy="asc"
-							aggregationSize="30"
-							size="30"
+							sortBy="count"
+							aggregationSize="8"
+							size="5"
 							react={{
 								"and": ["searchSensor"]
 							}}
+							filterLabel="Author"
 						/>
 						<Components.RangeInput
 							dataField="original_publication_year"
@@ -165,7 +161,7 @@ export default (() => {
 						justify-content="flex-start"
 					>
 						<Box width="100%" margin="0px auto 0px auto" padding=".5rem 1rem .5rem 1rem">
-							<Components.SelectedFilters showClearAll="never" />
+							<Components.SelectedFilters showClearAll="never" clearAllLabel="Clear All" />
 						</Box>
 						<Components.ReactiveList
 							componentId="SearchResult"
